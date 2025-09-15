@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeflix Signin</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/info.css" />
+  </head>
+  <body class="main-bg" style="padding: 1.5rem">
+    <h1>Signin</h1>
+
+    <a href="./" class="btn">Go home</a>
+    <form method="post">
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          value="test@test.com"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" autocomplete="off" />
+      </div>
+      <div>
+        <label for="tel">Insert your phone number</label>
+        <input type="tel" name="tel" id="tel" autocomplete="tel" value="12345" />
+      </div>
+      <div>
+        <label for="file">Profile picture </label>
+        <input type="file" name="profile" id="file" accept="image/png" />
+      </div>
+
+      <button type="button">Click no submit</button>
+
+      <fieldset>
+        <legend>Fav genre</legend>
+        <label for="shows">Shows</label>
+        <input type="radio" name="genre" id="shows" value="shows" />
+        <label for="docu">Docus</label>
+        <input type="radio" name="genre" id="docu" value="documentary" />
+      </fieldset>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
