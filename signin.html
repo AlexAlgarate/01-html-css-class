@@ -10,89 +10,94 @@
     <link rel="stylesheet" href="styles/components.css" />
   </head>
   <body class="main-bg" style="padding: 1.5rem">
-    <h1>Signin</h1>
+    <main>
+      <h1>Signin</h1>
 
-    <a href="./" class="btn">Go home</a>
-    <form method="post">
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          autocomplete="email"
-          value="test@test.com"
-          required
-        />
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div>
-        <label for="tel">Insert your phone number</label>
-        <input
-          type="tel"
-          name="tel"
-          id="tel"
-          autocomplete="tel"
-          value="12345"
-          required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        />
-      </div>
-      <div>
-        <label for="file">Profile picture </label>
-        <input type="file" name="profile" id="file" accept="image/png" />
-      </div>
+      <a href="./" class="btn">Go home</a>
+      <form method="post">
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            value="test@test.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div>
+          <label for="tel">Insert your phone number</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            autocomplete="tel"
+            value="12345"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+        </div>
+        <div>
+          <label for="file">Profile picture </label>
+          <input type="file" name="profile" id="file" accept="image/png" />
+        </div>
 
-      <button type="button">Click no submit</button>
+        <fieldset>
+          <legend>Fav genre</legend>
+          <label for="shows">Shows</label>
+          <!-- Checked ya es un tipo de validación del input radio -->
+          <input type="radio" name="genre" id="shows" value="shows" checked />
+          <label for="docu">Docus</label>
+          <input type="radio" name="genre" id="docu" value="documentary" />
+        </fieldset>
 
-      <fieldset>
-        <legend>Fav genre</legend>
-        <label for="shows">Shows</label>
-        <!-- Checked ya es un tipo de validación del input radio -->
-        <input type="radio" name="genre" id="shows" value="shows" checked />
-        <label for="docu">Docus</label>
-        <input type="radio" name="genre" id="docu" value="documentary" />
-      </fieldset>
+        <!-- <fieldset>
+          <legend>Fav programming lang</legend>
+          <label for="js">js</label>
+          <input type="checkbox" name="favlang" id="js" value="js" checked />
+          <label for="python">Python</label>
+          <input type="checkbox" name="favlang" id="python" value="python" />
+          <label for="go">Go</label>
+          <input type="checkbox" name="favlang" id="go" value="go" />
+        </fieldset> -->
 
-      <!-- <fieldset>
-        <legend>Fav programming lang</legend>
-        <label for="js">js</label>
-        <input type="checkbox" name="favlang" id="js" value="js" checked />
-        <label for="python">Python</label>
-        <input type="checkbox" name="favlang" id="python" value="python" />
-        <label for="go">Go</label>
-        <input type="checkbox" name="favlang" id="go" value="go" />
-      </fieldset> -->
+        <div>
+          <label for="bio">User bio</label>
+          <textarea
+            name="bio"
+            id="bio"
+            placeholder="Add you bio..."
+            required
+          ></textarea>
+        </div>
 
-      <div>
-        <label for="bio">User bio</label>
-        <textarea name="bio" id="bio" placeholder="Add you bio..." required></textarea>
-      </div>
+        <div>
+          <label for="remember">Remember me</label>
+          <input type="checkbox" name="remember" id="remember" />
+        </div>
 
-      <div>
-        <label for="remember">Remember me</label>
-        <input type="checkbox" name="remember" id="remember" />
-      </div>
-
-      <div>
-        <label for="country">Country</label>
-        <select name="country" id="country">
-          <option value="es">Spain</option>
-          <option value="COL">Colombia</option>
-          <option value="CAN">Canada</option>
-        </select>
-      </div>
-      <button type="reset">Reset</button>
-      <input type="submit" value="Enviar" />
-    </form>
+        <div>
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="es">Spain</option>
+            <option value="COL">Colombia</option>
+            <option value="CAN">Canada</option>
+          </select>
+        </div>
+        <button class="btn" type="reset">Reset</button>
+        <button class="btn" type="submit">Guardar</button>
+      </form>
+    </main>
   </body>
 </html>
