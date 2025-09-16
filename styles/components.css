@@ -5,6 +5,13 @@
   display: inline-block;
   border-radius: 5px;
   text-decoration: none;
+  border: 1px solid var(--main-brand-color);
+  cursor: pointer;
+
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+  }
 }
 /*
 .btn:hover {
@@ -15,25 +22,32 @@
   .btn:hover {
     background-color: var(--main-brand-color-light);
   }
-}
-.form-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  label {
-    margin-bottom: 0.5rem;
-  }
-  input,
-  select,
-  textarea {
-    padding: 1rem;
-    border-radius: 4px;
-    border: none;
-    color: var(--main-text-color);
-    background-color: var(--input-bg-color);
+  .btn.secondary:hover {
+    background-color: var(--border-color);
   }
 }
 
-input[type='file'] {
-  margin-bottom: 0.5rem;
+.form {
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+      margin-bottom: 0.5rem;
+    }
+    input,
+    select,
+    textarea {
+      padding: 1rem;
+      border-radius: 4px;
+      border: none;
+      color: var(--main-text-color);
+      background-color: var(--input-bg-color);
+    }
+  }
+
+  input[type='file'],
+  fieldset {
+    margin-bottom: 0.5rem;
+  }
 }
