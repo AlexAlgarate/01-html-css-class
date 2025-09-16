@@ -25,15 +25,29 @@
           id="email"
           autocomplete="email"
           value="test@test.com"
+          required
         />
       </div>
       <div>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" autocomplete="off" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="off"
+          required
+        />
       </div>
       <div>
         <label for="tel">Insert your phone number</label>
-        <input type="tel" name="tel" id="tel" autocomplete="tel" value="12345" />
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          autocomplete="tel"
+          value="12345"
+          required
+        />
       </div>
       <div>
         <label for="file">Profile picture </label>
@@ -45,7 +59,8 @@
       <fieldset>
         <legend>Fav genre</legend>
         <label for="shows">Shows</label>
-        <input type="radio" name="genre" id="shows" value="shows" />
+        <!-- Checked ya es un tipo de validación del input radio -->
+        <input type="radio" name="genre" id="shows" value="shows" checked />
         <label for="docu">Docus</label>
         <input type="radio" name="genre" id="docu" value="documentary" />
       </fieldset>
@@ -53,7 +68,7 @@
       <fieldset>
         <legend>Fav programming lang</legend>
         <label for="js">js</label>
-        <input type="checkbox" name="favlang" id="js" value="js" />
+        <input type="checkbox" name="favlang" id="js" value="js" checked />
         <label for="python">Python</label>
         <input type="checkbox" name="favlang" id="python" value="python" />
         <label for="go">Go</label>
@@ -62,7 +77,7 @@
 
       <div>
         <label for="bio">User bio</label>
-        <textarea name="bio" id="bio" placeholder="Add you bio..."></textarea>
+        <textarea name="bio" id="bio" placeholder="Add you bio..." required></textarea>
       </div>
 
       <div>
